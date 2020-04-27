@@ -1,0 +1,17 @@
+﻿<Window x:Class="PMAEasyExportImportSlicer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PMAEasyExportImportSlicer"
+        mc:Ignorable="d"
+        Title="PMA Easy Export-Import Slicer" Height="350" Width="525" >
+    <Grid>
+        <Button x:Name="btnOpenSqlFile" Content="Select the SQL file you want to break up in smaller pieces..." Margin="10,10,10,0" VerticalAlignment="Top" Click="btnOpenSqlFile_Click" Height="26"/>
+        <TextBlock x:Name="tbFinished" Margin="10,41,10,10" TextWrapping="Wrap" Text="All done. Check the folder of the originating file - we added the smaller SQL files..." TextAlignment="Center" Visibility="Hidden"/>
+        <Button x:Name="btnCopyContents" Content="Copy contents" Margin="10,63,10,0" VerticalAlignment="Top" Height="26" Click="btnCopyContents_Click" />
+        <CheckBox x:Name="cbShowBelow" Content="Display contents below (CPU intensive)" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Checked="cbShowBelow_Checked"/>
+        <TextBox x:Name="tbFile" Margin="10,114,10,27" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap"/>
+        <Label x:Name="lblAbout" Content="www.barbez.eu" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,1" Foreground="#FF0066CC" Cursor="Hand" MouseDown="lblAbout_MouseDown" TouchDown="lblAbout_MouseDown" />
+    </Grid>
+</Window>
